@@ -1,0 +1,27 @@
+{
+  "name": "Book_app",
+  "version": "0.0.0",
+  "private": false,
+  "author": "Wisdomekpot",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "dotenv": "^8.2.0",
+    "express": "~4.15.2",
+    "express-fileupload": "^1.1.7-alpha.4",
+    "hbs": "^4.1.1",
+    "method-override": "^2.3.8",
+    "morgan": "~1.8.1",
+    "multer": "^1.3.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.0.2",
+    "nodemon": "^2.0.4",
+    "sequelize": "^5.22.3",
+    "serve-favicon": "~2.4.2"
+  },
+  "license": "MIT"
+}

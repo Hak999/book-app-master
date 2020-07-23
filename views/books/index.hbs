@@ -1,0 +1,37 @@
+<div class="col-md-10 col-md-offset-1">
+	<h2>Books <a href="/book/new" class="btn btn-primary text-right btn-sm">Add Book</a></h2>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Price</th>
+				<th>Description</th>
+				<th>Photo</th>
+				<th>Date Added</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each books}}
+				<tr>
+					<td>{{dataValues.id}}</td>
+					<td>{{dataValues.title}}</td>
+					<td>{{dataValues.author}}</td>
+					<td>{{dataValues.price}}</td>
+					<td>{{dataValues.description}}</td>
+					<td>{{dataValues.photo}}</td>
+					<td>{{dataValues.createdAt}}</td>
+					<td class="spaced-buttons" style="align-items: center;">
+						<a href="/book/{{dataValues.id}}/detail" class="btn btn-success">view</a> <span>
+						<a href="/book/{{dataValues.id}}/edit" class="btn btn-warning">Edit</a>
+						</span>
+						<span>
+						<a href="/book/{{dataValues.id}}/delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this book?')">Delete</a>
+						</span>
+					</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>
